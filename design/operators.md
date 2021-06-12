@@ -8,6 +8,7 @@ Operator | Method | Description
 \-= | sub_assgn() | Arithmetic subtraction and assignment
 \* | mul() | Arithmetic multiplication
 \*= | mul_assgn() | Arithmetic multiplication and assignment
+\** | repl() | Replication
 \/ | div() | Arithmetic division
 \/= | div_assgn() | Arithmetic division and assignment
 \% | rem() | Arithmetic remainder
@@ -26,7 +27,7 @@ Operator | Method | Description
 \& intersection | intersection() | Intersection
 \| or_bit | or_bit() | Bitwise OR
 \|= | or_bit_assgn() |  Bitwise OR and assignment
-\|| or | or() | Logical OR
+\|\| or | or() | Logical OR
 \| union | union() | union
 \# xor_bit | xor_bit() | Bitwise XOR
 \#= | xor_bit_assgn() |  Bitwise XOR and assignment
