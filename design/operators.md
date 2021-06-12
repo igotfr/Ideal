@@ -31,6 +31,8 @@ Operator | Method | Description
 \| union | union() | union
 \# xor_bit | xor_bit() | Bitwise XOR
 \#= | xor_bit_assgn() |  Bitwise XOR and assignment
+\~ and_bit | not_bit() | Bitwise NOT
+\~ and_bit | not_bit() | Logical NOT
 \== | eq() | Structural Equality
 is | is() | Identity Equality
 \!= | eq() | Structural Non-equality
