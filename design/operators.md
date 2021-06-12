@@ -2,15 +2,15 @@ Operator | Method | Description
 :------: | :----: | :---------:
 \+ | add() | Arithmetic addition
 \+= | add_assgn() | Arithmetic addition and assignment
-\+. | add() | Arithmetic Matrix addition
-\+.= | add_assgn() | Arithmetic Matrix addition and assignment
+\+. | add() | Arithmetic Matrix Broadcast addition
+\+.= | add_assgn() | Arithmetic Matrix Broadcast addition and assignment
 \++ | conc() | Concatenation
 \- | sub() | Arithmetic subtraction
 \- | neg() | Arithmetic negation
 \-= | sub_assgn() | Arithmetic subtraction and assignment
-\-. | sub() | Arithmetic Matrix subtraction
-\-. | neg() | Arithmetic Matrix negation
-\-.= | sub_assgn() | Arithmetic Matrix subtraction and assignment
+\-. | sub() | Arithmetic Matrix Broadcast subtraction
+\-. | neg() | Arithmetic Matrix Broadcast negation
+\-.= | sub_assgn() | Arithmetic Matrix Broadcast subtraction and assignment
 \* | mul() | Arithmetic multiplication
 \*= | mul_assgn() | Arithmetic multiplication and assignment
 \*. | mul() | Arithmetic Matrix Broadcast multiplication
