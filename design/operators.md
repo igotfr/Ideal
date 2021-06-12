@@ -32,10 +32,10 @@ Operator | Method | Description
 \# xor_bit | xor_bit() | Bitwise XOR
 \#= | xor_bit_assgn() |  Bitwise XOR and assignment
 \~ and_bit | not_bit() | Bitwise NOT
-\! not | not() | Logical NOT
+\! $ not | not() | Logical NOT
 \== | eq() | Structural Equality
 is | is() | Identity Equality
-\!= | eq() | Structural Non-equality
+\!= $= | eq() | Structural Non-equality
 isnt | isnt() | Identity Non-equality
 \< | lt() | Less than
 \<= | le() | Less than or equal
