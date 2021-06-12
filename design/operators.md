@@ -35,7 +35,7 @@ Operator | Method | Description
 \! $ not | not() | Logical NOT
 \== | eq() | Structural Equality
 is | is() | Identity Equality
-\!= $= | eq() | Structural Non-equality
+\!= $= | ne() | Structural Non-equality
 isnt | isnt() | Identity Non-equality
 \< | lt() | Less than
 \<= | le() | Less than or equal
