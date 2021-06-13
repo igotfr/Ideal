@@ -1,9 +1,9 @@
 Operator | Method | Description | Types | Unary
 :------: | :----: | :---------: | :---: | :---:
-\+ | add() | Arithmetic addition | Integers, Floats, Bool, Array
-\+= | add_assgn() | Arithmetic addition and assignment | Integers, Floats, Bool, Array
-\+. | add() | Arithmetic Matrix Broadcast addition | Integers, Floats, Array
-\+.= | add_assgn() | Arithmetic Matrix Broadcast addition and assignment | Integers, Floats, Array
+\+ | add() | Arithmetic addition | Integers, Floats, Bool, String, Array
+\+= | add_assgn() | Arithmetic addition and assignment | Integers, Floats, Bool, String, Array
+\+. | add() | Arithmetic Matrix Broadcast addition | Integers, Floats, String, Array
+\+.= | add_assgn() | Arithmetic Matrix Broadcast addition and assignment | Integers, Floats, String, Array
 \++ | conc() | Concatenation | Integers, Floats, String, Array
 \- | sub() | Arithmetic subtraction
 \- | neg() | Arithmetic negation | | Unary
@@ -13,8 +13,8 @@ Operator | Method | Description | Types | Unary
 \-.= | sub_assgn() | Arithmetic Matrix Broadcast subtraction and assignment
 \* | mul() | Arithmetic multiplication | Integers, Floats, Bool, Array
 \*= | mul_assgn() | Arithmetic multiplication and assignment | Integers, Floats, Bool, Array
-\*. | mul() | Arithmetic Matrix Broadcast multiplication | Integers, Floats, Array
-\*.= | mul_assgn() | Arithmetic Matrix Broadcast multiplication and assignment | Integers, Floats, Array
+\*. | mul() | Arithmetic Matrix Broadcast multiplication | Integers, Floats, String, Array
+\*.= | mul_assgn() | Arithmetic Matrix Broadcast multiplication and assignment | Integers, Floats, String, Array
 \** | repl() | Replication | Integers, Floats, String, Array
 \/ | div() | Arithmetic division
 \/= | div_assgn() | Arithmetic division and assignment
