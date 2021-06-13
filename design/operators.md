@@ -1,21 +1,21 @@
-Operator | Method | Description
-:------: | :----: | :---------:
-\+ | add() | Arithmetic addition
-\+= | add_assgn() | Arithmetic addition and assignment
-\+. | add() | Arithmetic Matrix Broadcast addition
-\+.= | add_assgn() | Arithmetic Matrix Broadcast addition and assignment
-\++ | conc() | Concatenation
+Operator | Method | Description | Types | Unary
+:------: | :----: | :---------: | :---: | :---:
+\+ | add() | Arithmetic addition | Integers, Floats, Bool, Array
+\+= | add_assgn() | Arithmetic addition and assignment | Integers, Floats, Bool, Array
+\+. | add() | Arithmetic Matrix Broadcast addition | Integers, Floats, Array
+\+.= | add_assgn() | Arithmetic Matrix Broadcast addition and assignment | Integers, Floats, Array
+\++ | conc() | Concatenation | Integers, Floats, String, Array
 \- | sub() | Arithmetic subtraction
-\- | neg() | Arithmetic negation
+\- | neg() | Arithmetic negation | | Unary
 \-= | sub_assgn() | Arithmetic subtraction and assignment
 \-. | sub() | Arithmetic Matrix Broadcast subtraction
 \-. | neg() | Arithmetic Matrix Broadcast negation
 \-.= | sub_assgn() | Arithmetic Matrix Broadcast subtraction and assignment
-\* | mul() | Arithmetic multiplication
-\*= | mul_assgn() | Arithmetic multiplication and assignment
-\*. | mul() | Arithmetic Matrix Broadcast multiplication
-\*.= | mul_assgn() | Arithmetic Matrix Broadcast multiplication and assignment
-\** | repl() | Replication
+\* | mul() | Arithmetic multiplication | Integers, Floats, Bool, Array
+\*= | mul_assgn() | Arithmetic multiplication and assignment | Integers, Floats, Bool, Array
+\*. | mul() | Arithmetic Matrix Broadcast multiplication | Integers, Floats, Array
+\*.= | mul_assgn() | Arithmetic Matrix Broadcast multiplication and assignment | Integers, Floats, Array
+\** | repl() | Replication | Integers, Floats, String, Array
 \/ | div() | Arithmetic division
 \/= | div_assgn() | Arithmetic division and assignment
 \/. | div() | Arithmetic Matrix Broadcast division
@@ -28,10 +28,8 @@ Operator | Method | Description
 \^= | pow_assgn() | Arithmetic potentiation and assignment
 \^. | pow() | Arithmetic Matrix Broadcast potentiation
 \^.= | pow_assgn() | Arithmetic Matrix Broadcast potentiation and assignment
-\! | fact() | Arithmetic factorial
-\!= | fact_assgn() | Arithmetic factorial and assignment
-\!. | fact() | Arithmetic Matrix Broadcast factorial
-\!.= | fact_assgn() | Arithmetic Matrix Broadcast factorial and assignment
+\! | fact() | Arithmetic factorial | | Unary
+\!. | fact() | Arithmetic Matrix Broadcast factorial | | Unary
 \<< | shl() | Left bit shift
 \<<= | shl_assgn() | Left bit shift and assignment
 \>> | shr() | Right bit shift
@@ -48,8 +46,8 @@ Operator | Method | Description
 \| union | union() | union
 \# xor_bit | xor_bit() | Bitwise XOR
 \#= | xor_bit_assgn() |  Bitwise XOR and assignment
-\~ and_bit | not_bit() | Bitwise NOT
-\! ~ $ not | not() | Logical NOT
+\~ and_bit | not_bit() | Bitwise NOT | | Unary
+\! ~ $ not | not() | Logical NOT | | Unary
 \== | eq() | Structural Equality
 is | is() | Identity Equality
 \!= ~= | ne() | Structural Non-equality
