@@ -12,7 +12,7 @@ Operator | Method | Description | Types | Unary
 \-. | neg() | Arithmetic Matrix Broadcast negation | Integers, Bool, Floats
 \-.= | sub_assgn() | Arithmetic Matrix Broadcast subtraction and assignment | Integers, Bool, Floats
 \* | mul() | Arithmetic multiplication | Integers, Floats, Bool, Array
-\*= | mul_assgn() | Arithmetic multiplication and assignment | Integers, Bool, Floats, Bool, Array
+\*= | mul_assgn() | Arithmetic multiplication and assignment | Integers, Bool, Floats, Array
 \*. | mul() | Arithmetic Matrix Broadcast multiplication | Integers, Bool, Floats, String, Array
 \*.= | mul_assgn() | Arithmetic Matrix Broadcast multiplication and assignment | Integers, Bool, Floats, String, Array
 \** | repl() | Replication | Integers, Bool, Floats, String, Array
