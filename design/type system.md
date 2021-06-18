@@ -36,12 +36,26 @@ null or Null or None or none
 
 0b1, 0o7, 0xf
 
+___
+
 12e3 == 12_000, 12E3 == 12_000 (depreacated because e is a hexadecimal)
 
 12g3 == 12_000, 12G3 == 12_000
 
 0xfp3 == 15 * 2 ^ 3, 0xfP3 == 15 * 2 ^ 3
 
-0xfp(2)3
+0xf*2^3 == 15 * 2 ^ 3
 
-"\u{1f4a9}"
+___
+
+'\b{1100001}' == 'a' == 97
+
+'\o{172}' == 'z' == 122
+
+'\x{65}' == 'e' == 101
+
+'\u{1f4a9}' == 128169
+
+___
+
+'ABCD' : Multibyte Character literals
