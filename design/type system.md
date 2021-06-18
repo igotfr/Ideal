@@ -1,5 +1,5 @@
 Type | Description
----- | :----------:
+---- | :---------:
 bool
 u8, u16, u32, u64, u128, usize, ulong
 i8, i16, i32, i64, i128, isize, ilong
@@ -15,7 +15,7 @@ anyerror | an error code
 
 ## Primitives
 Type | Description
----- | :----------:
+---- | :---------:
 Bool
 U8, U16, U32, U64, U128, USize, ULong
 I8, I16, I32, I64, I128, ISize, ILong
@@ -30,8 +30,18 @@ Type | the type of types
 Anyerror | an error code
 
 ## Values
-undefined
+undefined or Undefined
 
-null or None or none
+null or Null or None or none
 
 0b1, 0o7, 0xf
+
+12e3 == 12_000, 12E3 == 12_000 (depreacated because e is a hexadecimal)
+
+12g3 == 12_000, 12G3 == 12_000
+
+0xfp3 == 15 * 2 ^ 3, 0xfP3 == 15 * 2 ^ 3
+
+0xfp(2)3
+
+"\u{1f4a9}"
