@@ -52,8 +52,8 @@ let arr List[u8] = List{3, 5, 7, 9};
 let arr List[u8] = [u8]{3, 5, 7, 9};
 let arr List[u8] = {3, 5, 7, 9};
 
-let arr List = Array[u8]{3, 5, 7, 9};
-let arr List = Array{3, 5, 7, 9};        // comptime_int
+let arr List = List[u8]{3, 5, 7, 9};
+let arr List = List{3, 5, 7, 9};        // comptime_int
 let arr List = [u8]{3, 5, 7, 9};
 let arr List = {3, 5, 7, 9};             // comptime_int
 
