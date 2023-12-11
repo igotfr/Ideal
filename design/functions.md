@@ -26,7 +26,7 @@ lbd l(a: u8, b: f32): f32 = f;
 l = g; // error
 
 // or mutable
-var lbd l(a: u8, b: f32): f32 = f;
+vlbd l(a: u8, b: f32): f32 = f;
 
 l = g; // ok
 
@@ -44,7 +44,7 @@ mlbd (a: u8) l(b: f32): f32 = f;
 l = g; // error
 
 // or mutable
-var mlbd (a: u8) l(b: f32): f32 = f;
+vmlbd (a: u8) l(b: f32): f32 = f;
 
 l = g; // ok
 
