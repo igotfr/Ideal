@@ -34,17 +34,17 @@ l(4, 3.2);
 ```
 ## Method Lambdas
 ```rust
-lbd (a: u8) l(b: f32): f32 {
+mlbd (a: u8) l(b: f32): f32 {
   return a as f32 + b
 }
 
 // or immutable
-lbd (a: u8) l(b: f32): f32 = f;
+mlbd (a: u8) l(b: f32): f32 = f;
 
 l = g; // error
 
 // or mutable
-var lbd (a: u8) l(b: f32): f32 = f;
+var mlbd (a: u8) l(b: f32): f32 = f;
 
 l = g; // ok
 
