@@ -7,6 +7,16 @@ fn f(a: u8, b: f32): f32 {
 f(4, 3.2);
 ```
 ## Methods
+> **<sup>Syntax</sup>**\
+> _Method_ :\
+> &nbsp;&nbsp; _MethodQualifiers_ `mtd` [_GenericParams_]<sup>?</sup>&nbsp;`(` _MethodParameters_<sup>?</sup> `)` [IDENTIFIER]&nbsp; `(` _MethodParameters_<sup>?</sup> `)`\
+> &nbsp;&nbsp; &nbsp;&nbsp; _FunctionReturnType_<sup>?</sup> [_WhereClause_]<sup>?</sup>\
+> &nbsp;&nbsp; &nbsp;&nbsp; ( [_BlockExpression_] | `;` )
+>
+> _FunctionParameters_ :\
+> &nbsp;&nbsp; &nbsp;&nbsp; _SelfParam_ `,`<sup>?</sup>\
+> &nbsp;&nbsp; | (_SelfParam_ `,`)<sup>?</sup> _FunctionParam_ (`,` _FunctionParam_)<sup>\*</sup> `,`<sup>?</sup>
+>
 ```rust
 mtd (a: u8) m(b: 32): f32 {
   return a as f32 + b
