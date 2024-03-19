@@ -13,7 +13,7 @@ class Point(x, y)
 let p = Point(2, 3)
 
 match p {
-  Point(1, 3) => {}
+  Point(4 | 5, 3..=7) => {}
   Point(let xp, 4) | let Point(xp, 5) => {}
   Point(let xp, let yp) | let Point(xp, yp) => {}
 }
