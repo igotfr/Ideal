@@ -64,6 +64,14 @@ class Point<T>(
     fn new(x: T, y: T) -> Self {
         Self(x, y)
     }
+} <T: PartialOrd>$<T> {
+    async fn cmp_display(shared self) {
+        if self.x >= self.y {
+            print("The largest member is x = {self.x}").await
+        } else {
+            print("The largest member is y = {self.y}").await
+        }
+    }
 } $<f32> {
     fn distance_from_origin(shared self) -> f32 {
         (self.x.powi(2) + self.y.powi(2)).sqrt()
@@ -87,6 +95,16 @@ impl<T> Point<T> {
 impl Point<f32> {
     fn distance_from_origin(&self) -> f32 {
         (self.x.powi(2) + self.y.powi(2)).sqrt()
+    }
+}
+
+impl<T: Display + PartialOrd> Point<T> {
+    fn cmp_display(&self) {
+        if self.x >= self.y {
+            println!("The largest member is x = {}", self.x);
+        } else {
+            println!("The largest member is y = {}", self.y);
+        }
     }
 }
 ```
