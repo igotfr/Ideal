@@ -1,3 +1,5 @@
+Dada doesn't need to be a completely new language, it can just be a syntax "correction" of Rust with some syntax sugar
+
 in Dada:
 ```swift
 class Rectangle(
