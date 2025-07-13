@@ -1,3 +1,4 @@
+```rust
 error NetworkError
 error IOError
 
@@ -20,3 +21,4 @@ fn main() {
         IOError {}
       }
 }
+```
