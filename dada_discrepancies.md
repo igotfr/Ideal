@@ -1,10 +1,12 @@
-`var` instead `mut`
+`mut` instead `var`
 
 `permissions` names and missing ones
 
 instances with `()` instead `{}`
 
 return with `->` instead `:`
+
+`return` instead `ret`
 
 ## Missing
 ```rust
