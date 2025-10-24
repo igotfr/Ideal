@@ -1,12 +1,43 @@
-`mut` instead `var`
+## Keywords
+| Ideal | Dada |
+| :---: | :--: |
+| `var` | `mut` |
+| `ret` | `return` |
 
-`permissions` names and missing ones
+## Permissions
+| Ideal | Dada |
+| :---: | :--: |
+| `own` / `ownd` | `give` / `given`, `owned`, `my` |
+| `shr` / `shrd` | `share` / `shared`, `our` |
+|||
+| `ptr` / `ptrd` | `ref` / |
+| `mptr` / `mptrd` | / `lent` |
+|||
+| `uptr` or `rptr` / `uptrd` or `rptrd` ||
+| `umptr` or `rmptr` / `umptrd` or `rmptrd` ||
+|||
+| `ref` / `refd` ||
+| `mref` / `mrefd` ||
+|||
+| `uref` or `rref` / `urefd` or `rrefd` ||
+| `umref` or `rmref` / `umrefd` or `rmrefd` ||
 
-instances with `()` instead `{}`
+`m` in `mptr` means mutable
 
-return with `->` instead `:`
+`u` in `uptr` means unsafe
 
-`return` instead `ret`
+`r` in `rptr` means raw
+
+## Operators
+| Ideal | Dada |
+| :---: | :--: |
+| `:` in return type | `->` in return type |
+
+## Notations
+| Ideal | Dada |
+| :---: | :--: |
+| StructInstance { /* fields */ } | StructInstance(/* fields */) |
+| `each` elem `<-` iterator ||
 
 ## Missing
 ```rust
