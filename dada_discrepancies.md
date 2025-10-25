@@ -46,3 +46,10 @@ v: type T dyn Trait (idk)
 ```
 
 alias of fields with variable with same name `:field`
+
+`dlet`, `dvar`, `plet`, `pvar`
+
+out the block with `out` or `retb`
+
+labeled blocks
+
