@@ -32,6 +32,7 @@
 | Ideal | Dada |
 | :---: | :--: |
 | `:` in return type | `->` in return type |
+| `\` in path | `.` in path |
 
 ## Notations
 | Ideal | Dada |
@@ -53,3 +54,4 @@ out the block with `out` or `retb`
 
 labeled blocks
 
+`=>` to blocks with only 1 statement
