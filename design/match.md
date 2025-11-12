@@ -8,13 +8,13 @@ match n {
 }
 ```
 ```rust
-class Point(x, y)
+struct Point(x, y)
 
-let p = Point(2, 3)
+let p = Point{2, 3}
 
 match p {
-  Point(4, 5) => {}
-  Point(let xp, 6 | 7) | Point(let xp, 8..=10) | let Point(xp, 11) => {}
-  Point(let xp, let yp) | let Point(xp, yp) => {}
+  Point{4, 5} => {}
+  Point{let xp, 6 | 7} | Point{let xp, 8..=10} | plet Point{xp, 11} => {}
+  Point{let xp, let yp} | plet Point{xp, yp} => {}
 }
 ```
