@@ -46,7 +46,11 @@ v: type T impl Trait
 v: type T dyn Trait (idk)
 ```
 
+named arguments in function call and struct instantiation
+
 alias of fields with variable with same name `:field`
+
+array: `_[1, 2, 3]` or `@[1, 2, 3]`
 
 `dlet`, `dvar`, `plet`, `pvar`
 
