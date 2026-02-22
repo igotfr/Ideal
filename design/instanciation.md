@@ -39,6 +39,8 @@ async fn main() {
   let cl13: Cl = Cl{1, 2, c: 3}
 
   # you can't mixing named and positional arguments, unless you mix the trailing named arguments
+  let cl14: Cl = Cl{1, c: 3, b: 2} # ok
+
   let cl14: Cl = Cl{a: 1, 3, b: 2} # error:
 # Argument already passed for this parameter.
 # No value passed for parameter 'c'.
@@ -72,6 +74,19 @@ async fn main() {
 # No value passed for parameter 'b'.
 
   let cl21: Cl = Cl{c: 3, a: 1, 2} # error:
+# Mixing named and positional arguments is not allowed unless the order of the arguments matches the order of the parameters.
+# No value passed for parameter 'b'.
 
+  let cl22: Cl = Cl{c: 3, 2, a: 1} # error:
+# Mixing named and positional arguments is not allowed unless the order of the arguments matches the order of the parameters.
+# No value passed for parameter 'b'.
+
+  let cl23: Cl = Cl{c: 3, b: 2, 1} # error:
+# Mixing named and positional arguments is not allowed unless the order of the arguments matches the order of the parameters.
+# No value passed for parameter 'a'.
+
+  let cl24: Cl = Cl{c: 3, 1, b: 2} # error:
+# Mixing named and positional arguments is not allowed unless the order of the arguments matches the order of the parameters.
+# No value passed for parameter 'a'.
 }
 ```
