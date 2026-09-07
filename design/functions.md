@@ -1,7 +1,7 @@
 ## Functions
 ```rust
 fn f(a: u8, b: f32): f32 {
-  return a as f32 + b
+  ret a as f32 + b
 }
 
 f(4, 3.2);
@@ -34,7 +34,7 @@ f(4, 3.2);
 > &nbsp;&nbsp; `->` [_Type_]
 ```rust
 mtd (a: u8) m(b: 32): f32 {
-  return a as f32 + b
+  ret a as f32 + b
 }
 
 4.m(3.2);
@@ -42,7 +42,7 @@ mtd (a: u8) m(b: 32): f32 {
 ## Lambdas
 ```rust
 lbd l(a: u8, b: f32): f32 {
-  return a as f32 + b
+  ret a as f32 + b
 }
 
 // or immutable
@@ -60,7 +60,7 @@ l(4, 3.2);
 ## Method Lambdas
 ```rust
 mlbd (a: u8) l(b: f32): f32 {
-  return a as f32 + b
+  ret a as f32 + b
 }
 
 // or immutable

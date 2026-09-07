@@ -3,8 +3,9 @@ let n = 2
 let m = 2
 
 match n {
-  1 | m => print("1 or {n}"),
-  let _ => print("any other")
+  1 | m => print!("1 or {n}"), // this is printed because n == m = 2
+  let p at 3##50 => print!(p),
+  let _ => print!("any other, variable not created")
 }
 ```
 ```rust
