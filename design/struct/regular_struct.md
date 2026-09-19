@@ -5,6 +5,13 @@ struct St(
   c: u8
 ) {
   field_non_instantiable_initialized: u8 = 4
+  d: u8 = a + b
+  e: u8 => {
+    get => a + b
+    set => c = newValue
+    // or
+    set(newC) => c = newC
+  }
 
   ctor cn(a, b = 6) [c = 8] {}
 
