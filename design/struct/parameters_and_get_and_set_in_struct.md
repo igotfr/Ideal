@@ -1,5 +1,6 @@
 ```rust
 struct St(a: u8, b: u8) : (p1: u8, p2: u8) {
+  field_non_instantiable_initialized: u8 = 4
   c: u8 = p1 + p2
   d: u8 = a + b
   e: u8 => {
@@ -21,6 +22,8 @@ fn main() {
   println!(st.f) // error, f is private
 
   println!(st.f_get()) // prints 8
+
+  println!(st.field_non_instantiable_initialized) // prints 4
 
   println!(st.c) // access c, which is p1 + p2, in this case: 7
 
