@@ -19,7 +19,7 @@ struct St(a: u8, b: u8) : (p1: u8, p2: u8) {
   //fn cn(a: u8, b: u8 = 6): Self => ret Self{a, b, 8}
   fn cn(a: u8, b: u8 = 6): Self => ret Self{a: a, b: b, c: 8}
 
-  mtd (shrd self) sum_fields(): u8 => self.a + self.b + self.c + self.field_non_instantiable_initialized
+  mtd (shrd self) sum_fields(): u8 => self.a + self.b + self.c + self.field_non_instantiable_initialized + self.d + self.e + self.f
 
   fn check(value: u8): String =>
     ret if value > 120 -> "Invalid value"
