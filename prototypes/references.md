@@ -1,4 +1,5 @@
 ref: depende da mutabilidade da variável
+
 iref: não depende da mutabilidade da variável
 
 ## não altera valor nem endereço - Explorar versatilidade
@@ -60,6 +61,9 @@ p = &b; // ok
 p = &mut b; // ok
 ```
 ## altera valor e endereço - Explorar versatilidade
+```rust
+VOU PENSAR
+```
 ```rust
 var a: u8 = 1; // 0xa
 var b: u8 = 2; // 0xb
